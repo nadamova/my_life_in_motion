@@ -1,0 +1,31 @@
+{
+  "name": "mylifeinmotion",
+  "authors": [
+    "nadamova"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "handlebars": "^4.0.5",
+    "sammy": "^0.7.6",
+    "toastr": "^2.1.3",
+    "bootstrap": "~3.0.0",
+    "mocha": "^3.1.0",
+    "chai": "^3.5.0",
+    "sinonjs": "^1.17.1",
+    "systemjs": "*"
+  },
+  "resolutions": {
+    "jquery": "^3.1.1"
+  }
+}
