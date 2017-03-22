@@ -7,7 +7,10 @@ let data = (() => {
         return requester.getJSON(`api/camper-list/${id}`);
     }
 
-    
+    function getAllCampers() {
+        return requester.getJSON(`api/camper-list`);
+    }
+
     /*function addComment(id, text) {
         return isLoggedIn()
             .then((result) => {
@@ -24,7 +27,8 @@ let data = (() => {
 
 
     return {
-        getCamperById
+        getCamperById,
+        getAllCampers
     }
 })();
 

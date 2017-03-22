@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="breadcrumb-and-search row">
+    <ol class="breadcrumb">
+      <li><a href="#/home">Home</a></li>
+      <li><a href="#/campers-list">Campers</a></li>
+      <li class="active">{{model}}</li>
+    </ol>
+  </div>
+  <hr>
+  <div class="row product-info">
+
+  {{#each campers}}
+    {{this.model}}
+  {{/each}}
+
+  </div>
+</div>
