@@ -7,6 +7,7 @@ module.exports = function(params) {
         getAllCampers(req, res) {
             data.getAllCampers()
                 .then(allCampers => {
+                    console.log(allCampers)
                     res.json({ data: allCampers });
                 })
                 .catch(err => {

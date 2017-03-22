@@ -31,7 +31,28 @@ module.exports = modelRegistrator.register('Camper', {
     sunblocker: {
         type: String
     },
-    price: {
+    pricesixlow: {
+        type: Number
+    },
+      pricefourteenlow: {
+        type: Number
+    },
+      pricetwentylow: {
+        type: Number
+    },
+      pricetwentyonelow: {
+        type: Number
+    },
+     pricesixhigh: {
+        type: Number
+    },
+      pricefourteenhigh: {
+        type: Number
+    },
+      pricetwentyheigh: {
+        type: Number
+    },
+      pricetwentyonehigh: {
         type: Number
     },
     comments: [{

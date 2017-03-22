@@ -6,82 +6,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
 
-  <!--Libs-->
-  <script src="./bower_components/jquery/dist/jquery.js"></script>
-  <script src="./bower_components/sammy/lib/sammy.js"></script>
-  <script src="./bower_components/toastr/toastr.js"></script>
-  <script src="./bower_components/handlebars/handlebars.js"></script>
-  <script src="./bower_components/tether/dist/js/tether.js"></script>
-  <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="./node_modules/systemjs/dist/system.js"></script>
-  <script src="./systemjs.config.js"></script>
-
   <!--Styles-->
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./bower_components/toastr/toastr.css">
-  <link rel="stylesheet" href="./css/main.css">
-
-
-  <script>
-    System.import('app');
-  </script>
+  <link rel="stylesheet" href="./css/main.css/main.css">
 </head>
 
 <body>
-  <div class="jumbotron">
+  <header id="header">
+
     <div class="container my-custom-container">
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-inverse navigation">
         <div class="container-fluid">
+
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-            <a class="navbar-brand" href="#">
-              <img src="img/Logo3.png" alt="">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+           </button>
+            <a class="navbar-brand" id="logo" href="#">
+              <img src="img/Logo4.png" alt="">
             </a>
+
           </div>
 
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Campers selector</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Recommendations</a></li>
             </ul>
           </div>
         </div>
       </nav>
-    </div>
-  </div>
 
+      <div id="header-description" class="row">
+        <h3 id="header-slogan">
+          Memories are made of this!
+        </h3>
+        <p id="header-slogan-text">
+          Discover why you should embrace the RV lifestyle
+        </p>
+        <a id="sheader-slogan-btn" class="btn btn-success" href="#/campers">Show me</a>
+      </div>
+    </div>
+  </header>
 
   <main>
     <div id="content">
 
     </div>
   </main>
+
+  <hr>
+  <div id="footer">
+
+  </div>
+
+  <div class="footer">
+    <a class="btn btn-campers" href="#/campers">Click here to rent a camper</a>
+    <p>
+      <img src="img/Logo4.png" alt="footer-logo" />
+    </p>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#/location">About us</a></li>
+        <li><a href="#/location">Contacts</a></li>
+        <li><a href="#/location">Location</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Libs-->
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+  <script src="./bower_components/sammy/lib/sammy.js"></script>
+  <script src="./bower_components/toastr/toastr.js"></script>
+  <script src="./bower_components/handlebars/handlebars.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./node_modules/systemjs/dist/system.js"></script>
+  <script src="./systemjs.config.js"></script>
+
+  <script>
+    System.import('app');
+  </script>
 
 </body>
 

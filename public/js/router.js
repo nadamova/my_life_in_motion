@@ -8,7 +8,7 @@ let router = (() => {
                 context.redirect('#/camper');
             });
 
-            this.get("#/camper", controllers.camper.renderPage);
+            this.get("#/camper/:id", controllers.camper.renderPage);
 
             //this.get('#/register', controllers.auth.register);
 

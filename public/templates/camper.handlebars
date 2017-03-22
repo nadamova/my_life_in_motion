@@ -1,1 +1,134 @@
-super cool camper
+<div class="container">
+  <div class="breadcrumb-and-search row">
+    <ol class="breadcrumb">
+      <li><a href="#/home">Home</a></li>
+      <li><a href="#/campers-list">Campers</a></li>
+      <li class="active">{{model}}</li>
+    </ol>
+  </div>
+  <hr>
+  <div class="row product-info">
+
+    <div class="left-section col-lg-8 row">
+      <img class="" src="{{imageUrl}}" alt="camper-imgage">
+      <div class="product-description" data-camper-id="{{id}}">
+        <h5>{{model}}</h5>
+        <div>
+          <p>Capacity: {{capacity}}</p>
+          <p>Year of production: {{year}}</p>
+          <p>Fuel consumption: {{consumption}}</p>
+        </div>
+        <p>
+          <strong>Extras:</strong>
+        </p>
+        <ul>
+          <li>Fridge: {{fridge}}</li>
+          <li>Television: {{tv}}</li>
+          <li>Sunblocker: {{sunblocker}}</li>
+        </ul>
+        <section>
+          <span id="prices"></span>
+          <h3>Prices</h3>
+          <p>The price include SAT TV, solar system, airconditioners, invertor 600W, biodisposable toilet papper, chemical toilet
+            chemicals. Motorhomes are supplied with freshly laundered linen and bedding, kitchen essentials including crockery,
+            cutlery and cooking utensils, plus a few extra little luxuries like wine glasses and a coffee plunger so you
+            don’t go without on your holiday.
+          </p>
+        </section>
+        <div class="price-row">
+          <p class="bold">Low season (1 Ocober - 30 April)</p>
+          <p> 3-6 days: <span>{{pricesixlow}} lv/day</span></p>
+          <p> 7-14 days: <span>{{pricefourteenlow}} lv/day</span></p>
+          <p> 15-20 days:<span>{{pricetwentylow}} lv/day</span></p>
+          <p>over 21 days: <span>{{pricetwentyonelow}} lv/day</span></p>
+        </div>
+        <div class="price-row">
+          <p class="bold">Heigh season (1 May - 30 September)</p>
+          <p> 3-6 days: <span>{{pricesixhigh}} lv/day</span></p>
+          <p> 7-14 days: <span>{{pricefourteenhigh}} lv/day</span></p>
+          <p> 15-20 days: <span>{{pricetwentyheigh}} lv/day</span></p>
+          <p>over 21 days: <span>{{pricetwentyonehigh}} lv/day</span></p>
+        </div>
+      </div>
+
+      <div class="user-comment-section">
+        <h2>Make reservation now</h2>
+
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserve</button>
+
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+          <form class="modal-content animate container" action="/action_page.php">
+           
+              <label><b>Name</b></label>
+              <input type="text" placeholder="Enter name" name="name" required>
+
+              <label><b>Email</b></label>
+              <input type="text" placeholder="Enter email" name="email" required>
+
+              <label><b>Phone</b></label>
+              <input type="text" placeholder="Enter phone" name="phone" required>
+
+              <label><b>Country</b></label>
+              <input type="text" placeholder="Enter country" name="country" required>
+
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Reserve</button>
+              </div>
+           
+          </form>
+        </div>
+
+        <script>
+                                               // Get the modal
+                                               var modal = document.getElementById('id01');
+
+                                               // When the user clicks anywhere outside of the modal, close it
+                                               window.onclick = function (event) {
+                                                 if (event.target == modal) {
+                                                   modal.style.display = "none";
+                                                 }
+                                               }
+        </script>
+
+      </div>
+    </div>
+
+    {{!--Right-panel--}}
+
+    <aside class="col-md-4">
+      <div id="myifeinmotion-aside" class="collapse navbar-collapse">
+        <div class="recent-data">
+          <h3 class="title">Recent Posts</h3>
+          <div class="recent-data panel">
+            <div class="panel-body">
+              <ul>
+                <li><a href="#/">Why to rent a camper?</a></li>
+                <li><a href="#/">My summer trip with camper to BiH</a></li>
+                <li><a href="#/">Everything you should noe about the camper during the summer</a></li>
+                <li><a href="#/">Additional equipment - top 10 basics</a></li>
+                <li><a href="#/">Serg on Aenean bibendum elementum pede</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="recent-data">
+          <h3 class="title">Recent Comments</h3>
+          <div class="recent-data panel">
+            <div class="panel-body">
+              <ul>
+                <li><a href="#/">What camper to choose?</a></li>
+                <li><a href="#/">Where to leave my camper for the winter?</a></li>
+                <li><a href="#/">New Laika campers - observation</a></li>
+                <li><a href="#/">Rubby is the best</a></li>
+                <li><a href="#/">I am not good front-ender</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>

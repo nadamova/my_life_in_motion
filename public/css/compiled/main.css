@@ -1,0 +1,224 @@
+#nav .container-fluid {
+  padding-right: 16%;
+  padding-left: 16%; }
+
+body {
+  background: url("/img/templates-background.jpg"); }
+
+#header {
+  background-image: url(/img/Layer94.png);
+  color: #fff;
+  height: 12%;
+  width: 100%; }
+
+/*.navigation {
+  background: rgb(153, 146, 129);
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 0;
+
+  .navbar-header {
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    float: right;
+    position: relative;
+    right: 70px;
+  }
+
+  ul {
+    background:rgb(153, 146, 129);
+    margin-left: 0;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}*/
+/*Navbar*/
+#nav {
+  background: #999281;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 0; }
+  #nav .navbar-toggle {
+    float: right;
+    position: relative;
+    right: 70px; }
+  #nav ul {
+    background: #999281;
+    margin-left: 0; }
+  #nav a {
+    color: inherit; }
+    #nav a:hover {
+      text-decoration: none; }
+  #nav li,
+  #nav .navbar-brand {
+    text-transform: uppercase; }
+    #nav li:hover,
+    #nav .navbar-brand:hover {
+      color: #999281;
+      font-style: italic; }
+    #nav li #active,
+    #nav .navbar-brand #active {
+      background: #999281;
+      background-color: #999281;
+      color: #999281;
+      font-style: italic; }
+  #nav .current li::before,
+  #nav .current li::after {
+    background-color: #8c8676;
+    content: '';
+    display: block;
+    height: 2.5px;
+    width: 100%; }
+  #nav .active:hover {
+    background-color: #999281;
+    color: #fff;
+    font-style: normal; }
+  #nav p:hover {
+    color: inherit;
+    font-style: bold; }
+  #nav .form-group {
+    position: relative; }
+    #nav .form-group > .glyphicon {
+      position: absolute;
+      right: .5em;
+      top: .75em; }
+  #nav .container-fluid {
+    padding-left: 20px; }
+
+/*Slogan in header*/
+#header-description {
+  color: #fff;
+  margin-top: 10px; }
+  #header-description h3,
+  #header-description p {
+    width: 70%; }
+  #header-description h3 {
+    text-transform: uppercase; }
+  #header-description p {
+    font-size: 1em; }
+  #header-description .btn-success {
+    /*background: url('../images/home-button-background.png') no-repeat center !important;*/
+    border: 0;
+    border-radius: 20px;
+    width: 250px; }
+    #header-description .btn-success:hover {
+      border-bottom: 1px solid #0f0; }
+
+/*  Camper template*/
+.product-description {
+  display: inline-block; }
+
+/*Price rows*/
+.price-row {
+  width: 280px;
+  padding-right: 30px;
+  float: left;
+  margin-left: 23px; }
+
+.price-row p {
+  border-bottom: 1px solid #000;
+  float: left;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 7px 0; }
+
+/*RESERVATIOn input*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%; }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336; }
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%; }
+
+/* Add padding to container elements */
+.container {
+  padding: 16px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px; }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer; }
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%; } }

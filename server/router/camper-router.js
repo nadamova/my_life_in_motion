@@ -9,7 +9,7 @@ module.exports = function({ app, controllers }) {
 
     router
         .get("/camper-list", controllers.getAllCampers)
-        .get("/camper/:id", controllers.getCamperById)
+        .get("/camper-list/:id", controllers.getCamperById)
 
     app.use("/api", router);
 

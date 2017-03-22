@@ -4,6 +4,8 @@ const data = require("./data")(config.connectionString);
 const controllers = require("./controllers")({ data: data });
 const app = require("./config/application")({ data: data });
 
+require("./router")({app:app, data:data, controllers:controllers});
+
 app.listen(config.port, () => {
     return console.log(`App running at: ${config.port}`);
 });
