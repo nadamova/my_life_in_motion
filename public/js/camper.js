@@ -9,7 +9,7 @@ let camper = (() => {
    
             .then((template) => {
                
-                context.$element().html(template({}));
+                context.$element().html(template({camperId: camperId}));
 
             });
     }
