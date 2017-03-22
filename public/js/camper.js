@@ -1,17 +1,25 @@
 import { templateLoader } from './template-loader';
+import {data } from './data';
 
 let camper = (() => {
     function getCamper(context) {
 
         let camperId = context.params["id"];
 
-        templateLoader.get("camper")
+        data.getCamperById(camperId).then((response)=> {
+           
+            templateLoader.get("camper")
    
             .then((template) => {
                
-                context.$element().html(template({camperId: camperId}));
+                context.$element().html(template(response.data));
 
             });
+
+
+        })
+
+       
     }
 
     return {
