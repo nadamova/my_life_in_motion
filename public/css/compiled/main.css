@@ -274,3 +274,23 @@ button {
   font-size: 12px;
   font-style: italic;
   text-shadow: 1px 1px 1px #fff; }
+
+/*Footer-data*/
+.content-footer {
+  padding-top: 35px;
+  background-color: #f2f1e8;
+  text-align: left; }
+  .content-footer a {
+    color: #442917; }
+
+.row recent-data {
+  line-height: 24px;
+  color: #442917;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d5cf9d; }
+
+.title {
+  font-family: "LeagueGothic-Regular",serif;
+  font-style: normal;
+  color: #c7c399;
+  text-transform: uppercase; }
