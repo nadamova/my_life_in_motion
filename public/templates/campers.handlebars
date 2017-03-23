@@ -1,18 +1,36 @@
-
 <div class="container">
-  <div class="breadcrumb-and-search row">
-    <ol class="breadcrumb">
-      <li><a href="#/home">Home</a></li>
-      <li><a href="#/campers-list">Campers</a></li>
-      <li class="active">{{model}}</li>
-    </ol>
-  </div>
-  <hr>
-  <div class="row product-info">
+    <div class="breadcrumb-and-search row">
+        <ol class="breadcrumb">
+            <li><a href="#/home">Home</a></li>
+            <li class="active">Campers</li>
+        </ol>
+    </div>
+    <hr>
+    <div class="row product-info">
 
-  {{#each campers}}
-    {{this.model}}
-  {{/each}}
-
-  </div>
+        <div class="menu-gallery row">
+            {{#each campers}}
+            <div class="menu-inner-element col-md-4">
+                <div class="thumbnail">
+                    <div class="row">
+                        <a href="#/camper/{{this.id}}" class="col-md-6">
+                            <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
+                            <span class="price-tag">
+              <span>
+                <cufontext>{{pricesixlow}} lv</cufontext>
+              </span>
+                            </span>
+                        </a>
+                        <div class="menu-aside">
+                            <h5>{{this.model}}</h5>
+                            <p>
+                                <span class="capacity">For: {{this.capacity}} people</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
 </div>
