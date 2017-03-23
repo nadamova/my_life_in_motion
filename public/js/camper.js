@@ -13,11 +13,16 @@ let camper = (() => {
     }
 
     function getAllCampers(context) {
-      
+
         data.getAllCampers().then((response) => {
             templateLoader.get("campers")
                 .then((template) => {
-                    context.$element().html(template({ campers: response.data}));
+                    context.$element().html(template({ campers: response.data }));
+
+                    templateLoader.get("footer")
+                        .then((template) => {
+                            context.$element().append(template)
+                        })
                 });
         })
     }
