@@ -397,7 +397,7 @@ button {
 .footer {
   @extend %padding-right-and-left;
   background: #f2f1e8 !important;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-top: 10px;
   text-align: center;
   height: 140px;
@@ -458,7 +458,7 @@ button {
 .breadcrumb-and-search {
   @extend %padding-right-and-left;
   background-color:  rgb(248, 247, 242);
-
+  height:50px;
   .search {
     padding: 5px 0;
 
@@ -467,30 +467,39 @@ button {
       float: right;
       margin-right: 10px;
       width: 150px;
+      margin: 4px 5px;
     }
 
     button {
       background: url('/img/search-btn.png') no-repeat center !important;
       border-radius: 20px !important;
       color: #fff;
+      margin:4px;
     }
   }
 
-  .breadcrumb {
+  .pathline {
     font-family:  Sans-Serif;
     margin-bottom: 0;
-    padding: 8px 0;
-
+    height: 50px;
+    list-style:none;
+    li {
+          float: left;
+          line-height: 50px;
+          padding: 0px 10px;
+    }
     li + li:before {
       content: '>>';
       font-size: .8em;
-      vertical-align: text-top;
+      line-height: 50px;
+      margin-right: 15px;
     }
 
     a {
       color: rgb(146, 144, 124);
       text-decoration: none;
       text-transform: uppercase;
+      display:inline-block;
     }
 
     .active {

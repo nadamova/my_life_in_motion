@@ -299,7 +299,7 @@ button {
 /*footer*/
 .footer {
   background: #f2f1e8 !important;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-top: 10px;
   text-align: center;
   height: 140px; }
@@ -338,30 +338,40 @@ button {
       text-decoration: none; }
 
 .breadcrumb-and-search {
-  background-color: #f8f7f2; }
+  background-color: #f8f7f2;
+  height: 50px; }
   .breadcrumb-and-search .search {
     padding: 5px 0; }
     .breadcrumb-and-search .search input {
       border-radius: 20px !important;
       float: right;
       margin-right: 10px;
-      width: 150px; }
+      width: 150px;
+      margin: 4px 5px; }
     .breadcrumb-and-search .search button {
       background: url("/img/search-btn.png") no-repeat center !important;
       border-radius: 20px !important;
-      color: #fff; }
-  .breadcrumb-and-search .breadcrumb {
+      color: #fff;
+      margin: 4px; }
+  .breadcrumb-and-search .pathline {
     font-family: Sans-Serif;
     margin-bottom: 0;
-    padding: 8px 0; }
-    .breadcrumb-and-search .breadcrumb li + li:before {
+    height: 50px;
+    list-style: none; }
+    .breadcrumb-and-search .pathline li {
+      float: left;
+      line-height: 50px;
+      padding: 0px 10px; }
+    .breadcrumb-and-search .pathline li + li:before {
       content: '>>';
       font-size: .8em;
-      vertical-align: text-top; }
-    .breadcrumb-and-search .breadcrumb a {
+      line-height: 50px;
+      margin-right: 15px; }
+    .breadcrumb-and-search .pathline a {
       color: #92907c;
       text-decoration: none;
-      text-transform: uppercase; }
-    .breadcrumb-and-search .breadcrumb .active {
+      text-transform: uppercase;
+      display: inline-block; }
+    .breadcrumb-and-search .pathline .active {
       color: #92907c;
       text-transform: uppercase; }
