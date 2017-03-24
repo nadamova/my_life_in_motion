@@ -1,3 +1,5 @@
+@import 'tre';
+
 %padding {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -12,12 +14,13 @@ body {
     background: url('/img/templates-background.jpg');
 }
 
+
 #header {
     
     background-image: url(/img/Layer94.png);
     color: #fff;
     height:12%;
-     width:100%;
+    width:100%;
 }
 
 /*.navigation {
@@ -368,13 +371,14 @@ button {
     padding-top: 35px;
     background-color: #f2f1e8;
     text-align: left;
+    font-family: Georgia,serif;
     
     a {
       color: #442917;
     }
 }
 
-.row recent-data{
+.recent-data{
     line-height: 24px;
     color: #442917;
     padding-bottom: 15px;
@@ -386,4 +390,112 @@ button {
     font-style: normal;
     color: #c7c399;
     text-transform: uppercase;
+}
+
+/*footer*/
+
+.footer {
+  @extend %padding-right-and-left;
+  background: #f2f1e8 !important;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  height: 140px;
+
+  #footer-logo {
+    color: #442917;
+    padding-left: 5px;
+
+    img {
+      height: 20px;
+    }
+
+    span {
+      font-size: 1.4em;
+    }
+
+    p {
+      color: #a29d79;
+      font-style: italic;
+      margin-top: 10px;
+      padding-left: 0;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.footer-nav {
+    color: #442917;
+    text-align: center;
+    text-transform: uppercase;
+
+    ul {
+      display: inline-block;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+
+      &:nth-of-type(2) {
+        margin: 0 20px;
+        vertical-align: middle;
+      }
+    }
+
+    a {
+      background: none;
+      color: inherit;
+
+      &:hover {
+        color: #a29d79;
+        font-style: italic;
+        text-decoration: none;
+      }
+    }
+  }
+
+.breadcrumb-and-search {
+  @extend %padding-right-and-left;
+  background-color:  rgb(248, 247, 242);
+
+  .search {
+    padding: 5px 0;
+
+    input {
+      border-radius: 20px !important;
+      float: right;
+      margin-right: 10px;
+      width: 150px;
+    }
+
+    button {
+      background: url('/img/search-btn.png') no-repeat center !important;
+      border-radius: 20px !important;
+      color: #fff;
+    }
+  }
+
+  .breadcrumb {
+    font-family:  Sans-Serif;
+    margin-bottom: 0;
+    padding: 8px 0;
+
+    li + li:before {
+      content: '>>';
+      font-size: .8em;
+      vertical-align: text-top;
+    }
+
+    a {
+      color: rgb(146, 144, 124);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .active {
+      color: rgb(146, 144, 124);
+      text-transform: uppercase;
+    }
+  }
 }

@@ -12,7 +12,7 @@ let router = (() => {
 
             this.get("#/campers", controllers.camper.allCampers);
 
-            //this.get('#/register', controllers.auth.register);
+            this.get("#/location", controllers.location);
 
             //this.get("#/login", controllers.auth.login);
 

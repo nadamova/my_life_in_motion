@@ -1,4 +1,4 @@
-#nav .container-fluid, .menu-gallery {
+#nav .container-fluid, .menu-gallery, .footer, .breadcrumb-and-search {
   padding-right: 16%;
   padding-left: 16%; }
 
@@ -279,11 +279,12 @@ button {
 .content-footer {
   padding-top: 35px;
   background-color: #f2f1e8;
-  text-align: left; }
+  text-align: left;
+  font-family: Georgia,serif; }
   .content-footer a {
     color: #442917; }
 
-.row recent-data {
+.recent-data {
   line-height: 24px;
   color: #442917;
   padding-bottom: 15px;
@@ -294,3 +295,73 @@ button {
   font-style: normal;
   color: #c7c399;
   text-transform: uppercase; }
+
+/*footer*/
+.footer {
+  background: #f2f1e8 !important;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  height: 140px; }
+  .footer #footer-logo {
+    color: #442917;
+    padding-left: 5px; }
+    .footer #footer-logo img {
+      height: 20px; }
+    .footer #footer-logo span {
+      font-size: 1.4em; }
+    .footer #footer-logo p {
+      color: #a29d79;
+      font-style: italic;
+      margin-top: 10px;
+      padding-left: 0;
+      text-transform: capitalize; }
+
+.footer-nav {
+  color: #442917;
+  text-align: center;
+  text-transform: uppercase; }
+  .footer-nav ul {
+    display: inline-block;
+    padding: 0; }
+  .footer-nav li {
+    display: inline-block; }
+    .footer-nav li:nth-of-type(2) {
+      margin: 0 20px;
+      vertical-align: middle; }
+  .footer-nav a {
+    background: none;
+    color: inherit; }
+    .footer-nav a:hover {
+      color: #a29d79;
+      font-style: italic;
+      text-decoration: none; }
+
+.breadcrumb-and-search {
+  background-color: #f8f7f2; }
+  .breadcrumb-and-search .search {
+    padding: 5px 0; }
+    .breadcrumb-and-search .search input {
+      border-radius: 20px !important;
+      float: right;
+      margin-right: 10px;
+      width: 150px; }
+    .breadcrumb-and-search .search button {
+      background: url("/img/search-btn.png") no-repeat center !important;
+      border-radius: 20px !important;
+      color: #fff; }
+  .breadcrumb-and-search .breadcrumb {
+    font-family: Sans-Serif;
+    margin-bottom: 0;
+    padding: 8px 0; }
+    .breadcrumb-and-search .breadcrumb li + li:before {
+      content: '>>';
+      font-size: .8em;
+      vertical-align: text-top; }
+    .breadcrumb-and-search .breadcrumb a {
+      color: #92907c;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .breadcrumb-and-search .breadcrumb .active {
+      color: #92907c;
+      text-transform: uppercase; }
