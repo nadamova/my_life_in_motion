@@ -1,11 +1,11 @@
 import { camper } from './camper';
 import { location } from './location';
-//import { logout } from './logout';
+import { home } from './home';
 
 let controllers = {
     camper,
     location,
-    // userProfile,
+    home,
     //auth,
     //logout
     // createMaterial

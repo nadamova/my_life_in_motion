@@ -9,12 +9,9 @@
   padding-left: 16%;
 }
 
-
 body {
     background: url('/img/templates-background.jpg');
-
 }
-
 
 #header {
     
@@ -24,41 +21,9 @@ body {
     width:100%;
 }
 
-/*.navigation {
-  background: rgb(153, 146, 129);
-  border: 0;
-  border-radius: 0;
-  color: #fff;
-  margin-bottom: 0;
-
-  .navbar-header {
-    position: absolute;
-    width: 100%;
-  }
-
-  .navbar-toggle {
-    float: right;
-    position: relative;
-    right: 70px;
-  }
-
-  ul {
-    background:rgb(153, 146, 129);
-    margin-left: 0;
-  }
-
-  a {
-    color: inherit;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}*/
-
 /*Navbar*/
 
-#nav {
+nav {
   background: rgb(153, 146, 129);
   border: 0;
   border-radius: 0;
@@ -68,7 +33,6 @@ body {
   .navbar-toggle {
     float: right;
     position: relative;
-    right: 70px;
   }
 
   ul {
@@ -84,31 +48,14 @@ body {
     }
   }
 
-  li,
   .navbar-brand {
     text-transform: uppercase;
+    display: inline-block;
+    width: 50px;
+    padding: 10px 15px 0px;
 
-    &:hover {
-      color: rgb(153, 146, 129);
-      font-style: italic;
-    }
-
-    #active {
-      background: rgb(153, 146, 129);
-      background-color: rgb(153, 146, 129);
-      color:rgb(153, 146, 129);
-      font-style: italic;
-    }
-  }
-
-  .current {
-    li::before,
-    li::after {
-      background-color: rgb(140, 134, 118);
-      content: '';
-      display: block;
-      height: 2.5px;
-      width: 100%;
+    img {
+      width: 230px;
     }
   }
 
@@ -129,13 +76,7 @@ body {
   }
 
   .form-group {
-    position: relative;
-
-    > .glyphicon {
-      position: absolute;
-      right: .5em;
-      top: .75em;
-    }
+    position: relative
   }
 
   .container-fluid {
@@ -173,7 +114,6 @@ margin-top: 10px;
       border-bottom: 1px solid #0f0;
     }
   }}
-
 
 
 /*  Camper template*/
@@ -220,7 +160,6 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
 }
 
 /* Extra styles for the cancel button */

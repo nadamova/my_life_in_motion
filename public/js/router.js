@@ -5,26 +5,16 @@ let router = (() => {
     function init() {
         let sammyApp = Sammy("#content", function () {
             this.get('#/', function (context) {
-                context.redirect('#/camper');
+                context.redirect('#/home');
             });
 
             this.get("#/camper/:id", controllers.camper.singleCamper);
 
-            this.get("#/campers", controllers.camper.allCampers);
+            this.get("#/home/campers", controllers.camper.allCampers);
 
-            this.get("#/location", controllers.location);
+            this.get("#/home/location", controllers.location);
 
-            //this.get("#/login", controllers.auth.login);
-
-            //this.get("#/logout", controllers.logout.execute);
-
-            // this.get("#/create", controllers.createMaterial.all);
-
-            // this.get("#/materials/:id", controllers.materialProfile.all);
-
-            // this.get("#/profiles/:username", controllers.userProfile.all);
-
-            // this.get("#/profiles/:username/:category", controllers.userProfile.all);
+            this.get("#/home", controllers.home);
 
         });
 

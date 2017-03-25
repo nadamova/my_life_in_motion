@@ -1,4 +1,4 @@
-#nav .container-fluid, .menu-gallery, .footer, .breadcrumb-and-search {
+nav .container-fluid, .menu-gallery, .footer, .breadcrumb-and-search {
   padding-right: 16%;
   padding-left: 16%; }
 
@@ -11,89 +11,40 @@ body {
   height: 12%;
   width: 100%; }
 
-/*.navigation {
-  background: rgb(153, 146, 129);
-  border: 0;
-  border-radius: 0;
-  color: #fff;
-  margin-bottom: 0;
-
-  .navbar-header {
-    position: absolute;
-    width: 100%;
-  }
-
-  .navbar-toggle {
-    float: right;
-    position: relative;
-    right: 70px;
-  }
-
-  ul {
-    background:rgb(153, 146, 129);
-    margin-left: 0;
-  }
-
-  a {
-    color: inherit;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}*/
 /*Navbar*/
-#nav {
+nav {
   background: #999281;
   border: 0;
   border-radius: 0;
   color: #fff;
   margin-bottom: 0; }
-  #nav .navbar-toggle {
+  nav .navbar-toggle {
     float: right;
-    position: relative;
-    right: 70px; }
-  #nav ul {
+    position: relative; }
+  nav ul {
     background: #999281;
     margin-left: 0; }
-  #nav a {
+  nav a {
     color: inherit; }
-    #nav a:hover {
+    nav a:hover {
       text-decoration: none; }
-  #nav li,
-  #nav .navbar-brand {
-    text-transform: uppercase; }
-    #nav li:hover,
-    #nav .navbar-brand:hover {
-      color: #999281;
-      font-style: italic; }
-    #nav li #active,
-    #nav .navbar-brand #active {
-      background: #999281;
-      background-color: #999281;
-      color: #999281;
-      font-style: italic; }
-  #nav .current li::before,
-  #nav .current li::after {
-    background-color: #8c8676;
-    content: '';
-    display: block;
-    height: 2.5px;
-    width: 100%; }
-  #nav .active:hover {
+  nav .navbar-brand {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 50px;
+    padding: 10px 15px 0px; }
+    nav .navbar-brand img {
+      width: 230px; }
+  nav .active:hover {
     background-color: #999281;
     color: #fff;
     font-style: normal; }
-  #nav p:hover {
+  nav p:hover {
     color: inherit;
     font-style: bold; }
-  #nav .form-group {
+  nav .form-group {
     position: relative; }
-    #nav .form-group > .glyphicon {
-      position: absolute;
-      right: .5em;
-      top: .75em; }
-  #nav .container-fluid {
+  nav .container-fluid {
     padding-left: 20px; }
 
 /*Slogan in header*/
@@ -150,8 +101,7 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  cursor: pointer;
-  width: 100%; }
+  cursor: pointer; }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
