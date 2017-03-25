@@ -337,6 +337,7 @@ button {
       font-style: italic;
       text-decoration: none; }
 
+/*  Location page*/
 .breadcrumb-and-search {
   background-color: #f8f7f2;
   height: 50px; }
@@ -376,6 +377,31 @@ button {
       color: #92907c;
       text-transform: uppercase; }
 
-#map {
-  height: 171px;
-  width: 244px; }
+.left-section {
+  padding: 0;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+  .left-section .title {
+    color: #92907c;
+    font-family: Georgia;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .left-section p {
+    color: #442917;
+    font-size: 12px;
+    text-transform: uppercase; }
+  .left-section time,
+  .left-section span {
+    color: #92907c; }
+    .left-section time:hover,
+    .left-section span:hover {
+      font-weight: bold;
+      text-decoration: underline; }
+
+.map {
+  padding: 0; }
+  .map .gmap {
+    float: left;
+    height: 400px;
+    position: relative;
+    width: 100%; }
