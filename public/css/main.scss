@@ -12,6 +12,7 @@
 
 body {
     background: url('/img/templates-background.jpg');
+
 }
 
 
@@ -479,7 +480,7 @@ button {
   }
 
   .pathline {
-    font-family:  Sans-Serif;
+    font-family:  Georgia;
     margin-bottom: 0;
     height: 50px;
     list-style:none;
@@ -507,4 +508,9 @@ button {
       text-transform: uppercase;
     }
   }
+}
+
+#map {
+  height: 171px;
+  width: 244px;
 }

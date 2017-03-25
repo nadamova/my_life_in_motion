@@ -354,7 +354,7 @@ button {
       color: #fff;
       margin: 4px; }
   .breadcrumb-and-search .pathline {
-    font-family: Sans-Serif;
+    font-family: Georgia;
     margin-bottom: 0;
     height: 50px;
     list-style: none; }
@@ -375,3 +375,7 @@ button {
     .breadcrumb-and-search .pathline .active {
       color: #92907c;
       text-transform: uppercase; }
+
+#map {
+  height: 171px;
+  width: 244px; }
