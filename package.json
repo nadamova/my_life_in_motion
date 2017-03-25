@@ -7,7 +7,7 @@
     "start": "node server/app.js",
     "development": "./node_modules/.bin/nodemon .",
     "test": "./node_modules/.bin/mocha tests tests/**/*.js",
-    "install": "cd public && npm install"
+    "install": "cd public && npm install && bower install"
   },
   "author": "Az",
   "license": "MIT",
