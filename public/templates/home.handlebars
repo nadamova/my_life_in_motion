@@ -6,17 +6,20 @@
      
         <div class="gallery-inner-element">
             <div class="thumbnail">
+                {{#each campers}}
                 <div class="row">
                     <a href="#/camper/{{this._id}}" class="col-md-6">
                         <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
-                    </a>
+                  
                     <div class="menu-aside">
                         <h5>{{this.model}}</h5>
                         <p>
                             <span class="capacity">For: {{this.capacity}} people</span>
                         </p>
                     </div>
+                      </a>
                 </div>
+                {{/each}}
             </div>
         </div>
     

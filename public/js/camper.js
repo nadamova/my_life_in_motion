@@ -17,7 +17,19 @@ let camper = (() => {
         data.getAllCampers().then((response) => {
             templateLoader.get("campers")
                 .then((template) => {
-                    context.$element().html(template({ campers: response.data }));
+                    
+                    let campers = {
+                        integrated: [],
+                        "semi-integrated": [],
+                        all: []
+                    }
+
+                    response.data.forEach(function(camper) {
+                        
+                        let category = camper.category || 'all'
+                        campers[category] = campers[category].concat(camper)
+                    }, this);
+                    context.$element().html(template({ campers: campers }));
 
                     templateLoader.get("footer")
                         .then((template) => {
