@@ -17,15 +17,13 @@ let camper = (() => {
         data.getAllCampers().then((response) => {
             templateLoader.get("campers")
                 .then((template) => {
-                    
+
                     let campers = {
                         integrated: [],
                         "semi-integrated": [],
-                        all: []
+                        alcove: []
                     }
-
-                    response.data.forEach(function(camper) {
-                        
+                    response.data.forEach(function (camper) {
                         let category = camper.category || 'all'
                         campers[category] = campers[category].concat(camper)
                     }, this);
@@ -44,6 +42,5 @@ let camper = (() => {
         allCampers: getAllCampers
     }
 })();
-
 
 export { camper };

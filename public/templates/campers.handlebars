@@ -12,22 +12,26 @@
         </div>
     </div>
 </div>
-    <hr>
-    <div class="product-info">
-        <div class="menu-gallery row">
-        
-            {{#each campers.all}}
-            <div class="menu-inner-element col-md-4">
+<div class="container gallery-view">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 category-elemets">
+            <h3 class="category-title">
+                Integrated
+            </h3>
+            <div class="category-inner-element">
+                {{#each campers.integrated}}
                 <div class="thumbnail">
                     <div class="row">
-                        <a href="#/camper/{{this._id}}" class="col-md-6">
-                            <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
-                            <span class="price-tag">
-              <span>
-                <cufontext>{{pricesixlow}} lv</cufontext>
-              </span>
-                            </span>
-                        </a>
+                        <div class="col-md-3">
+                            <a href="#/camper/{{this._id}}">
+                                <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
+                                <span class="price-tag">
+                                        <span>
+                                            <cufontext>{{pricesixlow}} lv</cufontext>
+                                        </span>
+                                </span>
+                            </a>
+                        </div>
                         <div class="menu-aside">
                             <h5>{{this.model}}</h5>
                             <p>
@@ -36,8 +40,67 @@
                         </div>
                     </div>
                 </div>
+                {{/each}}
             </div>
-            {{/each}}
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 category-elemets">
+            <h3 class="category-title">
+                Alcove
+            </h3>
+            <div class="category-inner-element">
+                {{#each campers.alcove}}
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#/camper/{{this._id}}">
+                                <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
+                                <span class="price-tag">
+                                        <span>
+                                            <cufontext>{{pricesixlow}} lv</cufontext>
+                                        </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="menu-aside">
+                            <h5>{{this.model}}</h5>
+                            <p>
+                                <span class="capacity">For: {{this.capacity}} people</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 category-elemets">
+            <h3 class="category-title">
+                Semi-integrated
+            </h3>
+            <div class="category-inner-element">
+                {{#each campers.semi-integrated}}
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#/camper/{{this._id}}">
+                                <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
+                                <span class="price-tag">
+                                        <span>
+                                            <cufontext>{{pricesixlow}} lv</cufontext>
+                                        </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="menu-aside">
+                            <h5>{{this.model}}</h5>
+                            <p>
+                                <span class="capacity">For: {{this.capacity}} people</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
         </div>
     </div>
 </div>

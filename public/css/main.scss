@@ -232,13 +232,20 @@ button {
     }
 }
 
-/*Menu page*/
+/*Campers page*/
 
-.menu-gallery {
+.gallery-view {
   @extend %padding-right-and-left;
 }
 
-.menu-inner-element {
+.category-title {
+    font-family: "LeagueGothic-Regular",serif;
+    font-style: normal;
+    color: #c7c399;
+    text-transform: uppercase;
+}
+
+.category-inner-element {
   height: 70px;
   margin-bottom: 16px;
   padding: 0;
@@ -266,7 +273,7 @@ button {
     }
 
     .menu-aside {
-      width: 90%;
+     
 
       h5 {
         color: #725D50;

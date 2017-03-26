@@ -1,4 +1,4 @@
-nav .container-fluid, .menu-gallery, .footer, .breadcrumb-and-search {
+nav .container-fluid, .gallery-view, .footer, .breadcrumb-and-search {
   padding-right: 16%;
   padding-left: 16%; }
 
@@ -173,35 +173,39 @@ button {
   .cancelbtn, .signupbtn {
     width: 100%; } }
 
-/*Menu page*/
-.menu-inner-element {
+/*Campers page*/
+.category-title {
+  font-family: "LeagueGothic-Regular",serif;
+  font-style: normal;
+  color: #c7c399;
+  text-transform: uppercase; }
+
+.category-inner-element {
   height: 70px;
   margin-bottom: 16px;
   padding: 0; }
-  .menu-inner-element .thumbnail {
+  .category-inner-element .thumbnail {
     background-color: inherit;
     border: 0;
     height: 70px;
     padding: 0; }
-    .menu-inner-element .thumbnail img {
+    .category-inner-element .thumbnail img {
       border: 5px solid #fff;
       height: 64px;
       margin-left: 0;
       width: 56px; }
-    .menu-inner-element .thumbnail a {
+    .category-inner-element .thumbnail a {
       float: left;
       height: 64px;
       margin-right: 15px;
       padding: 0;
       position: relative;
       width: 56px; }
-    .menu-inner-element .thumbnail .menu-aside {
-      width: 90%; }
-      .menu-inner-element .thumbnail .menu-aside h5 {
-        color: #725D50;
-        font-size: 1em;
-        margin: 0; }
-    .menu-inner-element .thumbnail .price-tag {
+    .category-inner-element .thumbnail .menu-aside h5 {
+      color: #725D50;
+      font-size: 1em;
+      margin: 0; }
+    .category-inner-element .thumbnail .price-tag {
       background: url("/img/price-tag.png") no-repeat bottom left;
       display: block;
       font-size: .8em;
@@ -209,7 +213,7 @@ button {
       padding-left: 8px;
       position: absolute;
       top: 12px; }
-      .menu-inner-element .thumbnail .price-tag span {
+      .category-inner-element .thumbnail .price-tag span {
         color: #fff;
         display: block;
         font-style: normal;
