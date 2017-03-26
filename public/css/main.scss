@@ -8,6 +8,9 @@
   padding-right: 16%;
   padding-left: 16%;
 }
+* {
+  border-color: 1px solid red;
+}
 
 body {
     background: url('/img/templates-background.jpg');
@@ -120,6 +123,15 @@ margin-top: 10px;
 
   .product-description {
     display: inline-block;
+  }
+
+  .cam-img {
+    img {
+      border: 5px solid #fff;
+      height: 250px;
+      margin-left: 0;
+      width: 100%;
+    }
   }
 
 /*Price rows*/
@@ -405,7 +417,8 @@ button {
 /*  Location page*/
 
 .breadcrumb-and-search {
-  @extend %padding-right-and-left;
+  padding-right: 5%;
+  padding-left: 5%;
   background-color:  rgb(248, 247, 242);
   height:50px;
   .search {
@@ -464,10 +477,10 @@ button {
     padding-top: 10px;
 
     .title {
-      color: rgb(146, 144, 124);
-      font-family: Georgia;
-      font-size:16px;
-      text-transform: uppercase;
+    font-family: "LeagueGothic-Regular",serif;
+    font-style: normal;
+    color: #c7c399;
+    text-transform: uppercase;;
     }
 
     p {

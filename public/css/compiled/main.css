@@ -1,6 +1,9 @@
-nav .container-fluid, .gallery-view, .footer, .breadcrumb-and-search {
+nav .container-fluid, .gallery-view, .footer {
   padding-right: 16%;
   padding-left: 16%; }
+
+* {
+  border-color: 1px solid red; }
 
 body {
   background: url("/img/templates-background.jpg"); }
@@ -69,6 +72,12 @@ nav {
 /*  Camper template*/
 .product-description {
   display: inline-block; }
+
+.cam-img img {
+  border: 5px solid #fff;
+  height: 250px;
+  margin-left: 0;
+  width: 100%; }
 
 /*Price rows*/
 .price-row {
@@ -293,6 +302,8 @@ button {
 
 /*  Location page*/
 .breadcrumb-and-search {
+  padding-right: 5%;
+  padding-left: 5%;
   background-color: #f8f7f2;
   height: 50px; }
   .breadcrumb-and-search .search {
@@ -336,9 +347,9 @@ button {
   padding-bottom: 10px;
   padding-top: 10px; }
   .left-section .title {
-    color: #92907c;
-    font-family: Georgia;
-    font-size: 16px;
+    font-family: "LeagueGothic-Regular",serif;
+    font-style: normal;
+    color: #c7c399;
     text-transform: uppercase; }
   .left-section p {
     color: #442917;

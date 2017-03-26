@@ -1,44 +1,56 @@
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="breadcrumb-and-search">
-        <ol class="breadcrumb">
-          <li><a href="#/home">Home</a></li>
-          <li><a href="#/campers">Campers</a></li>
-          <li class="active">{{model}}</li>
-        </ol>
-      </div>
+<div class="breadcrumb-and-search pull-left">
+  <ol class="pathline col-sm-8">
+    <li><a href="#/home">Home</a></li>
+    <li class="active">Campers</li>
+    <li class="active">{{this.model}}</li>
+  </ol>
+  <div class="col-sm-4 search">
+    <div class="input-group pull-right">
+      <input type="text" class="form-control" placeholder="Search this website...">
+      <span class="input-group-btn">
+                    <button id="btn-search" class="btn btn-default" type="submit">Search</button>
+                </span>
     </div>
   </div>
-    <hr>
+</div>
+
+<div class="container">
   <div class="row">
     <div class="product-info">
       <div class="left-section col-lg-8">
-        <img class="" src="{{imageUrl}}" alt="camper-imgage">
-        <div class="product-description" data-camper-id="{{id}}">
-          <h5>{{model}}</h5>
-          <div>
-            <p>Capacity: {{capacity}}</p>
-            <p>Year of production: {{year}}</p>
-            <p>Fuel consumption: {{consumption}}</p>
+        <div class="row">
+          <div class="cam-img col col-md-6">
+            <img class="" src="{{imageUrl}}" alt="camper-imgage">
           </div>
-          <p>
-            <strong>Extras:</strong>
-          </p>
+
+          <div class="product-description col col-md-6" data-camper-id="{{id}}">
+            <h5>{{model}}</h5>
+            <div>
+              <p>Capacity: {{capacity}}</p>
+              <p>Year of production: {{year}}</p>
+              <p>Fuel consumption: {{consumption}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="extras-container">
+          <strong>Extras:</strong>
           <ul>
             <li>Fridge: {{fridge}}</li>
             <li>Television: {{tv}}</li>
             <li>Sunblocker: {{sunblocker}}</li>
           </ul>
-          <section>
-            <span id="prices"></span>
-            <h3>Prices</h3>
-            <p>The price include SAT TV, solar system, airconditioners, invertor 600W, biodisposable toilet papper, chemical toilet
-              chemicals. Motorhomes are supplied with freshly laundered linen and bedding, kitchen essentials including crockery,
-              cutlery and cooking utensils, plus a few extra little luxuries like wine glasses and a coffee plunger so you
-              don’t go without on your holiday.
-            </p>
-          </section>
+        </div>
+
+        <section>
+          <span id="prices"></span>
+          <h3>Prices</h3>
+          <p>The price include SAT TV, solar system, airconditioners, invertor 600W, biodisposable toilet papper, chemical toilet
+            chemicals. Motorhomes are supplied with freshly laundered linen and bedding, kitchen essentials including crockery,
+            cutlery and cooking utensils, plus a few extra little luxuries like wine glasses and a coffee plunger so you
+            don’t go without on your holiday.
+          </p>
+        </section>
+        <div class="row">
           <div class="price-row">
             <p class="bold">Low season (1 Ocober - 30 April)</p>
             <p> 3-6 days: <span>{{pricesixlow}} lv/day</span></p>
@@ -54,47 +66,30 @@
             <p>over 21 days: <span>{{pricetwentyonehigh}} lv/day</span></p>
           </div>
         </div>
+        <div class="row">
+          <div class="reservation-modal">
+            <h2>Make reservation now</h2>
 
-        <div class="user-comment-section">
-          <h2>Make reservation now</h2>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserve</button>
 
-          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Reserve</button>
-
-          <div id="id01" class="modal">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-            <form class="modal-content animate container" action="/action_page.php">
-            
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+              <form class="modal-content animate container" action="/action_page.php">
                 <label><b>Name</b></label>
                 <input type="text" placeholder="Enter name" name="name" required>
-
                 <label><b>Email</b></label>
                 <input type="text" placeholder="Enter email" name="email" required>
-
                 <label><b>Phone</b></label>
                 <input type="text" placeholder="Enter phone" name="phone" required>
-
                 <label><b>Country</b></label>
                 <input type="text" placeholder="Enter country" name="country" required>
-
                 <div class="clearfix">
                   <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
                   <button type="submit" class="signupbtn">Reserve</button>
                 </div>
-            
-            </form>
+              </form>
+            </div>
           </div>
-
-          <script>
-                                                // Get the modal
-                                                var modal = document.getElementById('id01');
-
-                                                // When the user clicks anywhere outside of the modal, close it
-                                                window.onclick = function (event) {
-                                                  if (event.target == modal) {
-                                                    modal.style.display = "none";
-                                                  }
-                                                }
-          </script>
 
         </div>
       </div>
@@ -135,5 +130,17 @@
       </aside>
 
     </div>
-  </div>    
+  </div>
 </div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+      }
+    }
+</script>
