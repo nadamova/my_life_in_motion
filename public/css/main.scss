@@ -15,59 +15,84 @@ body {
     font-size: 12px;
 }
 
-
 #header {   
     background-image: url(/img/Layer94.png);
+    height: 255px !important;
     color: #fff;
-    height:12%;
     width:100%;
 }
 
 /*Navbar*/
 
-.navigation {
-  background-color:rgb(153, 146, 129);;
-  border: 0;
-  border-radius: 0;
-  color: #fff;
-  margin-bottom: 0;
+.navbar-wrapper {
+  position:absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
 
-  .navbar-toggle {
-    float: right;
-    position: relative;
+    /* Flip around the padding for proper display in narrow viewports */
+  .container {
+    padding-right: 0;
+    padding-left: 0;
   }
 
+  .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .container {
+        width: auto;
+    }
+  }
+}
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 466px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
 }
 
 /*Slogan in header*/
 
 #header-description{
 color: #fff;
-margin-top: 10px;
+margin-top: 140px;
 
-  h3,
+
+  #header-slogan,
   p {
     width: 70%;
   }
 
-  h3 { 
-    text-transform: uppercase;
+  #header-slogan {
+    text-transform: uppercase;  
   }
 
-  p {
-    font-size: 1em;
+  #header-slogan-text {
+    font-size: 14px;
   }
-
-  .btn-success {
-    /*background: url('../images/home-button-background.png') no-repeat center !important;*/
-    border: 0;
-    border-radius: 20px;
-    width: 250px;
-
-    &:hover {
-      border-bottom: 1px solid #0f0;
-    }
-  }}
+}
 
 
 /*  Camper template*/
