@@ -5,10 +5,7 @@ import { home } from './home';
 let controllers = {
     camper,
     location,
-    home,
-    //auth,
-    //logout
-    // createMaterial
+    home
 };
 
 export { controllers };

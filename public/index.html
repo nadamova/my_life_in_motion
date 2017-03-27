@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width" />
 
   <!--Styles-->
+  <!--<link rel="stylesheet" href="./bower_components/flexslider/flexslider.css">-->
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./bower_components/toastr/toastr.css">
   <link rel="stylesheet" href="./css/compiled/main.css">
@@ -14,34 +15,35 @@
 
 <body>
   <header id="header">
-    <div class="container">
-      <div class="row">
+    <div id="wrapper" class="container">
+       <div id="carousel" class="row">
         <div class="col-sm-12">
           <nav class="navbar navbar-inverse navigation">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="logo" href="#">
-                  <img src="img/Logo4.png";alt="">
-                </a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav pull-right">
-                  <li name="Home" class="active"><a href="#/">Home</a></li>
-                  <li name="Campers"><a href="#/home/campers">Campers selection</a></li>
-                  <li name="Recommendations"><a href="#/home/recommendations">Tips</a></li>
-                  <li name="Location"><a href="#/home/location">Location</a></li>
-                  <li name="ContactUs"><a href="#/home/contactus">Contact Us</a></li>
-                </ul>
-              </div>
+              <a class="navbar-brand" id="logo" href="#">
+                <img src="img/Logo4.png" ;alt="logo">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav pull-right">
+                <li name="Home"><a href="#/">Home</a></li>
+                <li name="Campers"><a href="#/home/campers">Campers selection</a></li>
+                <li name="Recommendations"><a href="#/home/recommendations">Tips</a></li>
+                <li name="Location"><a href="#/home/location">Location</a></li>
+                <li name="ContactUs"><a href="#/home/contactus">Contact Us</a></li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -55,7 +57,7 @@
             <a id="sheader-slogan-btn" class="btn btn-success" href="#/campers">Show me</a>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
   </header>
 
@@ -83,6 +85,7 @@
 
     <!--Libs-->
     <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/flexslider/jquery.flexslider.js"></script>
     <script src="./bower_components/sammy/lib/sammy.js"></script>
     <script src="./bower_components/toastr/toastr.js"></script>
     <script src="./bower_components/handlebars/handlebars.js"></script>

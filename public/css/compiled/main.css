@@ -1,12 +1,12 @@
-nav .container-fluid, .gallery-view, .footer {
+@import url(media_queries.css);
+.gallery-view, .footer {
   padding-right: 16%;
   padding-left: 16%; }
 
-* {
-  border-color: 1px solid red; }
-
 body {
-  background: url("/img/templates-background.jpg"); }
+  background: url("/img/templates-background.jpg");
+  font-family: 'Myriad Pro', sans-serif;
+  font-size: 12px; }
 
 #header {
   background-image: url(/img/Layer94.png);
@@ -15,40 +15,15 @@ body {
   width: 100%; }
 
 /*Navbar*/
-nav {
-  background: #999281;
+.navigation {
+  background-color: #999281;
   border: 0;
   border-radius: 0;
   color: #fff;
   margin-bottom: 0; }
-  nav .navbar-toggle {
+  .navigation .navbar-toggle {
     float: right;
     position: relative; }
-  nav ul {
-    background: #999281;
-    margin-left: 0; }
-  nav a {
-    color: inherit; }
-    nav a:hover {
-      text-decoration: none; }
-  nav .navbar-brand {
-    text-transform: uppercase;
-    display: inline-block;
-    width: 50px;
-    padding: 10px 15px 0px; }
-    nav .navbar-brand img {
-      width: 230px; }
-  nav .active:hover {
-    background-color: #999281;
-    color: #fff;
-    font-style: normal; }
-  nav p:hover {
-    color: inherit;
-    font-style: bold; }
-  nav .form-group {
-    position: relative; }
-  nav .container-fluid {
-    padding-left: 20px; }
 
 /*Slogan in header*/
 #header-description {
@@ -351,10 +326,12 @@ button {
     font-style: normal;
     color: #c7c399;
     text-transform: uppercase; }
+  .left-section .extras-container {
+    color: #442917;
+    font-size: 14px; }
   .left-section p {
     color: #442917;
-    font-size: 12px;
-    text-transform: uppercase; }
+    font-size: 14px; }
   .left-section time,
   .left-section span {
     color: #92907c; }
@@ -370,3 +347,65 @@ button {
     height: 400px;
     position: relative;
     width: 100%; }
+
+/*Home template*/
+.suggestions-title {
+  font-family: "LeagueGothic-Regular",serif;
+  font-style: normal;
+  color: #c7c399;
+  text-transform: uppercase; }
+
+.home-inner-element {
+  height: 70px;
+  margin-bottom: 16px;
+  padding: 0; }
+  .home-inner-element .thumbnail {
+    background-color: inherit;
+    border: 0;
+    height: 70px;
+    padding: 0; }
+    .home-inner-element .thumbnail img {
+      border: 5px solid #fff;
+      height: 64px;
+      margin-left: 0;
+      width: 56px; }
+    .home-inner-element .thumbnail a {
+      float: left;
+      height: 64px;
+      margin-right: 15px;
+      padding: 0;
+      position: relative;
+      width: 56px; }
+    .home-inner-element .thumbnail .menu-aside h5 {
+      color: #725D50;
+      font-size: 1em;
+      margin: 0; }
+    .home-inner-element .thumbnail .price-tag {
+      background: url("/img/price-tag.png") no-repeat bottom left;
+      display: block;
+      font-size: .8em;
+      left: -8px;
+      padding-left: 8px;
+      position: absolute;
+      top: 12px; }
+      .home-inner-element .thumbnail .price-tag span {
+        color: #fff;
+        display: block;
+        font-style: normal;
+        height: 31px;
+        margin-left: -6px;
+        padding: 5px 5px 0 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+.thumb {
+  padding: 0;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  height: 69px;
+  width: 69px; }
+
+.pull-left {
+  float: left !important; }
+
+.link-tips {
+  font-style: italic; }

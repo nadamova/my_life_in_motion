@@ -1,65 +1,114 @@
-<div class="container promo-gallery">
-    <section class="col-md-4 inner-elemets">
-        <p class="inner-elemets-title">
-            Site’s Recommendations
-        </p>
-     
-        <div class="gallery-inner-element">
-            <div class="thumbnail">
-                {{#each campers}}
-                <div class="row">
-                    <a href="#/camper/{{this._id}}" class="col-md-6">
-                        <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
-                  
-                    <div class="menu-aside">
-                        <h5>{{this.model}}</h5>
-                        <p>
-                            <span class="capacity">For: {{this.capacity}} people</span>
-                        </p>
+ <div class="container carosel">
+ <div id="featured-flexslider" class="flexslider">
+        <ul class="slides">
+            <li>
+                <div class="featured-flexslider-img">
+                        <img src="img/camper1.jpg" alt="camper1" height="200" width="300">
+            
+                    <div class="img-caption">
+                        Enjoy the freedom
                     </div>
-                      </a>
+                </div>
+
+                <div class="text-caption">
+                    <div class="description-container">
+                        <h2>Nature is the best</h2>
+                       Spring is knocking on our door and nature will explode in all of its greatness.Spring is also one of the best seasons for camper van hire because places are not busy with mass tourism and everything is green and colourfull. Until the high season (24.6. till 30.9.) we are offering weekend camper van hire for Slovenia and Croatia. 
+                    </div>   
+                </div>
+            </li>
+
+               <li>
+                <div class="featured-flexslider-img">
+                        <img src="img/camper2.jpg" alt="camper1" height="200" width="300">
+            
+                    <div class="img-caption">
+                        Enjoy the freedom
+                    </div>
+                </div>
+
+                <div class="text-caption">
+                    <div class="description-container">
+                        <h2>Nature is the best</h2>
+                       Spring is knocking on our door and nature will explode in all of its greatness.Spring is also one of the best seasons for camper van hire because places are not busy with mass tourism and everything is green and colourfull. Until the high season (24.6. till 30.9.) we are offering weekend camper van hire for Slovenia and Croatia. 
+                    </div>   
+                </div>
+            </li>
+        </ul>
+    </div>
+ </div>
+<div class="container home-view">
+    <div class="row">       
+        <div class="col-xs-12 col-sm-6 col-md-4 category-elemets">
+            <h3 class="suggestions-title">
+                Site’s Recommendations
+            </h3>
+            <div class="home-inner-element">
+                {{#each campers}}
+                <div class="thumbnail">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#/camper/{{this._id}}">
+                                <img src="{{this.imageUrl}}" class="item-image" alt="{{model}}">
+                                <span class="price-tag">
+                                        <span>
+                                            <cufontext>{{pricesixlow}} lv</cufontext>
+                                        </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="menu-aside">
+                            <h5>{{this.model}}</h5>
+                            <p>
+                                <span class="capacity">For: {{this.capacity}} people</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 {{/each}}
             </div>
         </div>
-    
-    </section>
-    <section class="col-md-4 inner-elemets">
-        <p class="inner-elemets-title">
-            Location / Open hours
-        </p>
-        <div class="clearfix">
-            <iframe class="img-thumbnail gmap-home" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtyOSyDWBqkARKwEvURqoFFY&key=AIzaSyBhZ6ck8uOdRH7LDlCN43zTSYC8AB8jhsw"
-                allowfullscreen></iframe>
-        </div>
-        <div class="location-text">
-            <p>
-                4 Olimpiiska Str., Sofia
-            </p>
-            <p>
-                <span>Mon-Fri</span>
-                <time>10:00-18:00</time>
-                <span>Sat-Sun</span>
-                <time>10:00-18:00</time>
-            </p>
-        </div>
-    </section>
-    <section class="col-md-4 inner-elemets">
-        <div class="comments-section">
-            <p class="inner-elemets-title">
-                Some words of wisdom
-            </p>
-            <div class="thumbnail">
-                <div class="row books">
-                    <img src="img/comments-user2.jpg" class="item-image" alt="comments">
-                    <div class="game-info-aside">
-                        <h5>Bookworm</h5>
-                        <p class="platform">
-                            Oh no this cat cannot talk!
-                        </p>
-                    </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 category-elemets">
+            <h3 class="suggestions-title">
+                Location / Open hours
+            </h3>
+            <div class="col-md-12 col-sm-9">
+                <div class="clearfix">
+                    <iframe class="img-thumbnail gmap-home" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtyOSyDWBqkARKwEvURqoFFY&key=AIzaSyBhZ6ck8uOdRH7LDlCN43zTSYC8AB8jhsw"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="location-text">
+                    <p>
+                        <span>Mon-Fri</span>
+                        <time>10:00-18:00</time>
+                        <span>Sat-Sun</span>
+                        <time>10:00-18:00</time>
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-</div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4 category-elemets">
+            <h3 class="suggestions-title">
+                Tips & Tricks
+            </h3>
+
+            <div class="col-md-12 col-sm-9">
+                <section class="post">
+                    <div class="thumb pull-left">
+                        <img src="img/Crew-2.jpg" class="img-thumbnail" alt="img">
+                    </div>
+                    <div class="post-body">
+                        The 2017 August Bank Holiday sees Camper Calling return for not just 2, but 3 nights now at Ragley Hall, Warwickshire. Amazing
+                        music from your best loved bands, as well as introducing you to your new favourites! Combine that
+                        with family entertainment, adventure playgrounds, loads of activities including craft workshops,
+                        lake activities and some seriously tasty food & drink, you'll be as busy - or as chilled out - as
+                        you choose!
+                        <a href="#" class="link-tips">Read more</a>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
