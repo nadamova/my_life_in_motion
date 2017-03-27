@@ -20,16 +20,51 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
-  /* Flip around the padding for proper display in narrow viewports */ }
+  z-index: 20; }
   .navbar-wrapper .container {
     padding-right: 0;
     padding-left: 0; }
-  .navbar-wrapper .navbar {
+  .navbar-wrapper #nav-text {
     padding-right: 15px;
-    padding-left: 15px; }
-    .navbar-wrapper .navbar .container {
-      width: auto; }
+    padding-left: 15px;
+    background: #999281;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 30px; }
+    .navbar-wrapper #nav-text .navbar-header {
+      position: absolute;
+      width: 100%; }
+    .navbar-wrapper #nav-text .navbar-toggle {
+      float: right;
+      position: relative;
+      right: 70px; }
+    .navbar-wrapper #nav-text ul {
+      background: #999281;
+      margin-left: 0; }
+    .navbar-wrapper #nav-text a {
+      color: inherit;
+      font-style: bold; }
+      .navbar-wrapper #nav-text a:hover {
+        text-decoration: none; }
+    .navbar-wrapper #nav-text .container {
+      width: auto;
+      padding: 0; }
+  .navbar-wrapper li,
+  .navbar-wrapper .navbar-brand {
+    text-transform: uppercase; }
+    .navbar-wrapper li:hover,
+    .navbar-wrapper .navbar-brand:hover {
+      color: #eeeeba;
+      font-style: italic; }
+  .navbar-wrapper .current li::before,
+  .navbar-wrapper .current li::after {
+    background-color: #8c8676;
+    content: '';
+    display: block;
+    height: 2.5px;
+    width: 100%; }
 
 /* CAROUSEL
 -------------------------------------------------- */
@@ -46,6 +81,8 @@ body {
 .carousel .item {
   height: 500px;
   background-color: #777; }
+  .carousel .item p {
+    font-size: 16px; }
 
 .carousel-inner > .item > img {
   position: absolute;

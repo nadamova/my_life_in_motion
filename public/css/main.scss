@@ -30,22 +30,75 @@ body {
   right: 0;
   left: 0;
   z-index: 20;
-
-    /* Flip around the padding for proper display in narrow viewports */
+  
   .container {
     padding-right: 0;
     padding-left: 0;
   }
 
-  .navbar {
+  #nav-text {
     padding-right: 15px;
     padding-left: 15px;
+    background:  rgb(153, 146, 129);
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top:30px;
+
+  .navbar-header {
+    position: absolute;
+    width: 100%;
+  }
+
+  .navbar-toggle {
+    float: right;
+    position: relative;
+    right: 70px;
+  }
+
+  ul {
+    background:  rgb(153, 146, 129);
+    margin-left: 0;
+  }
+
+  a {
+    color: inherit;
+    font-style: bold;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
     .container {
         width: auto;
+        padding: 0;
+    }
+  }
+
+   li,
+  .navbar-brand {
+    text-transform: uppercase;
+
+    &:hover {
+      color:  rgb(238, 238, 186);
+      font-style: italic;
+    }
+  }
+
+  .current {
+    li::before,
+    li::after {
+      background-color:  rgb(140, 134, 118);
+      content: '';
+      display: block;
+      height: 2.5px;
+      width: 100%;
     }
   }
 }
+
 
 /* CAROUSEL
 -------------------------------------------------- */
@@ -64,6 +117,11 @@ body {
 .carousel .item {
   height: 500px;
   background-color: #777;
+  
+  p{
+      font-size:16px;
+  }
+  
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -73,6 +131,7 @@ body {
   height: 500px;
 }
 
+    
 /*Slogan in header*/
 
 #header-description{
