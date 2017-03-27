@@ -97,6 +97,8 @@ margin-top: 140px;
 
 /*  Camper template*/
 
+.product-info{
+
   .product-description {
     display: inline-block;
   }
@@ -110,6 +112,24 @@ margin-top: 140px;
     }
   }
 
+   aside {
+    line-height: 26px;
+         
+      .recent-data {
+          margin-bottom: 30px;
+           
+        ul {
+          padding-left: 10px;
+             
+            a {
+              font-family: Georgia;
+              color: #6c634b;
+              }
+          }
+      }
+    }
+}
+  
 /*Price rows*/
 
   .price-row {
@@ -126,6 +146,8 @@ margin-top: 140px;
     margin-bottom: 0px;
     padding: 7px 0;
   }
+
+/* Aside menu*/
 
 
 /*RESERVATIOn input*/
@@ -262,7 +284,6 @@ button {
 
     .menu-aside {
      
-
       h5 {
         color: #725D50;
         font-size: 1em;
@@ -494,10 +515,6 @@ button {
 
 /*Home template*/
 
-.best-gallery {
-
-}
-
 .suggestions-title {
     font-family: "LeagueGothic-Regular",serif;
     font-style: normal;
@@ -513,7 +530,7 @@ button {
   .thumbnail {
     background-color: inherit;
     border: 0;
-    height: 70px;
+    height: 50px;
     padding: 0;
 
     img {
@@ -534,7 +551,6 @@ button {
 
     .menu-aside {
      
-
       h5 {
         color: #725D50;
         font-size: 1em;
@@ -571,6 +587,11 @@ button {
     margin-bottom: 10px;
     height: 69px;
     width: 69px;
+
+     img {
+            width: 100%;
+            height: 100%;
+        }
 }
 
 .pull-left {
@@ -579,4 +600,36 @@ button {
 
 .link-tips {
   font-style: italic;
+}
+
+/*Tips page*/
+
+#blog-page-content {
+  color: #442917;
+  line-height: 2em;
+  font-size:14px;
+
+  .post {
+    .thumb {
+      width: 219px;
+      height: 219px;
+      }
+    }
+      
+  aside {
+    line-height: 26px;
+         
+      .recent-data {
+          margin-bottom: 30px;
+           
+        ul {
+          padding-left: 10px;
+             
+            a {
+              font-family: Georgia;
+              color: #6c634b;
+              }
+          }
+      }
+    }
 }

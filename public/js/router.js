@@ -16,6 +16,8 @@ let router = (() => {
 
             this.get("#/home", controllers.home);
 
+            this.get("#/home/recommendations", controllers.tips);
+
         });
 
         sammyApp.run('#/');

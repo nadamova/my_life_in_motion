@@ -67,14 +67,24 @@ body {
     font-size: 14px; }
 
 /*  Camper template*/
-.product-description {
+.product-info .product-description {
   display: inline-block; }
 
-.cam-img img {
+.product-info .cam-img img {
   border: 5px solid #fff;
   height: 250px;
   margin-left: 0;
   width: 100%; }
+
+.product-info aside {
+  line-height: 26px; }
+  .product-info aside .recent-data {
+    margin-bottom: 30px; }
+    .product-info aside .recent-data ul {
+      padding-left: 10px; }
+      .product-info aside .recent-data ul a {
+        font-family: Georgia;
+        color: #6c634b; }
 
 /*Price rows*/
 .price-row {
@@ -90,6 +100,7 @@ body {
   margin-bottom: 0px;
   padding: 7px 0; }
 
+/* Aside menu*/
 /*RESERVATIOn input*/
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -384,7 +395,7 @@ button {
   .home-inner-element .thumbnail {
     background-color: inherit;
     border: 0;
-    height: 70px;
+    height: 50px;
     padding: 0; }
     .home-inner-element .thumbnail img {
       border: 5px solid #fff;
@@ -425,9 +436,30 @@ button {
   margin-bottom: 10px;
   height: 69px;
   width: 69px; }
+  .thumb img {
+    width: 100%;
+    height: 100%; }
 
 .pull-left {
   float: left !important; }
 
 .link-tips {
   font-style: italic; }
+
+/*Tips page*/
+#blog-page-content {
+  color: #442917;
+  line-height: 2em;
+  font-size: 14px; }
+  #blog-page-content .post .thumb {
+    width: 219px;
+    height: 219px; }
+  #blog-page-content aside {
+    line-height: 26px; }
+    #blog-page-content aside .recent-data {
+      margin-bottom: 30px; }
+      #blog-page-content aside .recent-data ul {
+        padding-left: 10px; }
+        #blog-page-content aside .recent-data ul a {
+          font-family: Georgia;
+          color: #6c634b; }
