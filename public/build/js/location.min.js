@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.location=void 0;var _templateLoader=require("./template-loader"),_data=require("./data"),location=function e(t){return _templateLoader.templateLoader.get("location").then(function(e){t.$element().html(e)}),{getLocation:e}};exports.location=location;

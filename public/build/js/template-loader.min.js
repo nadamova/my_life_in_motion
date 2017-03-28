@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var templateLoader=function(){function e(e){return new Promise(function(r,a){void 0!==t[e]?r(t[e]):$.get("/templates/"+e+".handlebars").done(function(a){var n=Handlebars.compile(a);t[e]=n,r(n)}).fail(a)})}var t={};return{get:e}}();exports.templateLoader=templateLoader;

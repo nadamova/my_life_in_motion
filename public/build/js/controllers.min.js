@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.controllers=void 0;var _camper=require("./camper"),_location=require("./location"),_home=require("./home"),_tips=require("./tips"),controllers={camper:_camper.camper,location:_location.location,home:_home.home,tips:_tips.tips};exports.controllers=controllers;

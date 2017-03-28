@@ -1,0 +1,1 @@
+"use strict";var _router=require("./router");!function(){_router.router.init()}();

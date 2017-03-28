@@ -1,0 +1,5 @@
+@media(min-width:768px) and (max-width:991px){.navbar-wrapper{margin-top:20px}.navbar-wrapper .container{padding-right:15px;padding-left:15px}
+.navbar-wrapper .navbar{padding-right:0;padding-left:0}.navbar-wrapper .navbar{border-radius:4px}
+.carousel-caption p{margin-bottom:20px;font-size:21px;line-height:1.4}.featurette-heading{font-size:50px}
+}@media(min-width:992px){.featurette-heading{margin-top:120px}}@media(min-width:576px) and (max-width:767px){.product-info{margin:0 30px}
+}

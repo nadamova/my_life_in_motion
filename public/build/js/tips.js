@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.tips=void 0;var _templateLoader=require("./template-loader"),_data=require("./data"),tips=function e(t){return _templateLoader.templateLoader.get("tips").then(function(e){t.$element().html(e)}),{getTips:e}};exports.tips=tips;

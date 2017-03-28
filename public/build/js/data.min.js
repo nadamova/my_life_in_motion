@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.data=void 0;var _requester=require("./requester"),data=function(){function e(e){return _requester.requester.getJSON("api/camper-list/"+e)}function r(){return _requester.requester.getJSON("api/camper-list")}return{getCamperById:e,getAllCampers:r}}();exports.data=data;

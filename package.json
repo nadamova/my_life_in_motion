@@ -25,14 +25,30 @@
     "passport-local": "^1.0.0",
     "pug": "^2.0.0-beta6",
     "socket.io": "^1.7.1",
+    "gulp-uglifycss": "^1.0.6",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
+    "@types/gulp": "^3.8.32",
+    "browser-sync": "^2.18.8",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "eslint": "^3.10.2",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+    "gulp-copy": "^1.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-live-server": "0.0.30",
+    "gulp-minifier": "^0.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-scss-lint": "^0.4.0",
+    "gulp-sync": "^0.1.4",
+    "gulp-tslint": "^7.0.1",
+    "gulp-uglify": "^2.1.2",
     "sinon": "^1.17.6"
   }
 }
