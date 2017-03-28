@@ -14,7 +14,7 @@ let data = (() => {
     return {
         getCamperById,
         getAllCampers
-    }
+    };
 })();
 
 export { data };

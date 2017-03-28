@@ -1,5 +1,5 @@
-import { templateLoader } from './template-loader';
 import { data } from './data';
+import { templateLoader } from './template-loader';
 
 let camper = (() => {
     function getCamper(context) {
@@ -22,7 +22,7 @@ let camper = (() => {
                         integrated: [],
                         "semi-integrated": [],
                         alcove: []
-                    }
+                    };
                     response.data.forEach(function (camper) {
                         let category = camper.category || 'all'
                         campers[category] = campers[category].concat(camper)
@@ -31,16 +31,16 @@ let camper = (() => {
 
                     templateLoader.get("footer")
                         .then((template) => {
-                            context.$element().append(template)
-                        })
+                            context.$element().append(template);
+                        });
                 });
-        })
+        });
     }
 
     return {
         singleCamper: getCamper,
         allCampers: getAllCampers
-    }
+    };
 })();
 
 export { camper };

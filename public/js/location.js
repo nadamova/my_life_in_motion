@@ -1,6 +1,5 @@
-import { templateLoader } from './template-loader';
 import { data } from './data';
-
+import { templateLoader } from './template-loader';
 
 let location = function getLocation(context) {
     templateLoader.get("location")
@@ -9,7 +8,7 @@ let location = function getLocation(context) {
         });
     return {
          getLocation
-    }
-}
+    };
+};
 
 export { location };
